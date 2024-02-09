@@ -67,6 +67,26 @@ flowchart TB
           ]
         ]
       }
+    },
+{
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "ID": 2,
+        "fill": "#550000"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [18,40],
+              [20,49],
+              [23,54],
+              [18,54],
+              [18,40]
+          ]
+        ]
+      }
     }
   ]
 }
