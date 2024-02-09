@@ -75,7 +75,8 @@ flowchart TB
         "ID": 2,
         "title": "A title",
         "stroke": "#005500",
-        "fill": "#550000"
+        "stroke": "#000055",
+        "fill":   "#550000"
       },
       "geometry": {
         "type": "Polygon",
@@ -83,8 +84,8 @@ flowchart TB
           [
               [18,46],
               [20,49],
-              [23,54],
-              [18,54],
+              [23,55],
+              [18,55],
               [18,46]
           ]
         ]
