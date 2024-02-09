@@ -1,3 +1,4 @@
+```plantuml
 @startuml
 
 start
@@ -19,8 +20,9 @@ endif
 stop
 
 @enduml
+```
 
-
+```mermaid
 flowchart TB
    Start --> USO;
    USO(User Submits Order) --> CWS;
@@ -32,3 +34,4 @@ flowchart TB
    DO(Dispatch Order) --> |Dispatch Success| SS
    DO -->|Dispatch Failed| SE
    SS(Show Success) --> Finished   
+```
