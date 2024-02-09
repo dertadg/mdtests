@@ -1,25 +1,34 @@
-```plantuml
-@startuml
-
-start
-:User Submits Order;
-if (Check Warehouse Stock?) then (In Stock)
-    if (Process Payment) then (Payment Success)
-        if (Dispatch Order) then (Dispatch Success)
-            :Show Success;
-        else (Dispatch Failed)
-            :Show Error;
-        endif
-    else (Payment Failed)
-        :Show Error;
-    endif
-else (No Stock)
-    :Show Error;
-endif
-
-stop
-
-@enduml
+```stl
+solid cube_corner
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
 ```
 
 ```mermaid
