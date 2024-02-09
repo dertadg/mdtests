@@ -73,17 +73,19 @@ flowchart TB
       "id": 2,
       "properties": {
         "ID": 2,
+        "title": "A title",
+        "stroke": "#005500",
         "fill": "#550000"
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-              [18,40],
+              [18,46],
               [20,49],
               [23,54],
               [18,54],
-              [18,40]
+              [18,46]
           ]
         ]
       }
